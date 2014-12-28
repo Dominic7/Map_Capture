@@ -8,13 +8,14 @@ Simple GUI based Stratego game to demonstrate Expectiminimax Algorithm
 Rules:
 ============
  - First to either capture the entire board or elimate all other players wins
- - Can only move one square in the 4 cardinal directions (N(Up),S(Down),E(Right),W(Left)) each turn
+ - Can only move one square in one of the 4 cardinal directions (N(Up),S(Down),E(Right),W(Left)) each turn
  - Claiming/Capturing a square works as follows:
     - Square with higher population has a higher percentage of winning
-    - Smaller of two pops determines how many times square is attacked
+    - Smaller of two populations determines how many attackes (One battle, many attacks)
     - If after the battle a square is left with 0 population then that square is claimed if it was the defending square else
       the attacking player looses that square
- - At the end of the players turn the population of each of their squares is increased based on the current popualtion count
+ - At the end of the players turn the population of each of their squares is increased based on the current popualtion count 
+   *High pops grow faster
     
 
 To Run:
@@ -48,3 +49,4 @@ Needed Improvements (12-28-14):
  - Ability to change game board base shape (hexagon, triangle, etc...)
  - Ability to have 0 - N human players and 0 - N computer players
  - Improve difficuilty levels
+ - Improve population growth function
